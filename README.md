@@ -9,6 +9,8 @@
 - [Submission](#submission)
 - [Leaderboard](#leaderboard)
 - [Organizers](#organizers)
+- [FAQ](#faq)
+
 
 
 ## Background
@@ -115,3 +117,5 @@ We host the online submission system at [codalab](https://worksheets.codalab.org
 
 <img src="jf.png" width="50%" align="middle"/>
 
+## FAQ
+For any questions, please contact yil8@uci.edu
