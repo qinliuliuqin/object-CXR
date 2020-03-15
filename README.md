@@ -59,7 +59,9 @@ Three type of shapes are used namely rectangle, ellipse and polygon. We use `0`,
 
 ## Download
 The training and validation dataset can be accessed here at [Google Drive](https://drive.google.com/drive/folders/1SubfNALJn6aO56lUYeJsVpFLZuXurlBC). The imaging data has been
-anonymousized and free to download for scientific research and non-commercial usage.
+anonymousized and free to download for scientific research and non-commercial usage. 
+
+The usage of this data is under CC-BY-NC-4.0 license.
 
 
 ## Evaluation
