@@ -7,6 +7,7 @@
 - [Evaluation](#evaluation)
 - [Baseline](#baseline)
 - [Submission](#submission)
+- [Timeline](#timeline)
 - [Leaderboard](#leaderboard)
 - [Organizers](#organizers)
 - [FAQ](#faq)
@@ -107,6 +108,9 @@ We provide a baseline result in this [Jupyter Notebook](https://github.com/jfhea
 
 ## Submission
 We host the online submission system at [codalab](https://worksheets.codalab.org/worksheets/0xcd2fb3db8ae74d03b53ad4c5bf81ebe2)
+
+## Timeline
+The competition lasts from Feb/15/2020-Jun/30/2020, and the final results will be released during [MIDL 2020](https://2020.midl.io/).
 
 ## Leaderboard
 
