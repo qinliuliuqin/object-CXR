@@ -112,7 +112,8 @@ We host the online submission system at [codalab](https://worksheets.codalab.org
 
 | Rank    | Date |  Model  | AUC| FROC|
 | ------- | -----| --------| ---| ----| 
-| 1       |Feb 21, 2020 | [JF Healthcare baseline](https://github.com/jfhealthcare/object-CXR#baseline) | 0.921 |0.803|
+| 1       |Mar 18, 2020 | baseline_faster-rcnn (single model) *individual participant* | 0.923 |0.800|
+| 2       |Feb 21, 2020 | [JF Healthcare baseline](https://github.com/jfhealthcare/object-CXR#baseline) (single model)  *JF Healthcare*| 0.921 |0.803|
 
 ## Organizers
 [JF Healthcare](http://www.jfhealthcare.com/) is the primary organizer of this challenge
