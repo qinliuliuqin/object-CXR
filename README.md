@@ -134,9 +134,11 @@ The team wins the first place will be awarded an **NVIDIA TITAN RTX™**
 <img src="nvidia.png" width="50%" align="middle"/>
 
 Startup companies that sign up will have an opportunity to join the NVIDIA Inception Program; providing access to financing services; NVIDIA Deep Learning Institute (DLI) training courses; GPU cloud resources and technical guidance; and a host of other services. Developers can access the link below for free training resources
+
 https://www.nvidia.cn/developer/online-training
 
 University challengers can be invited to participate in the University Ambassador Program of NVIDIA Deep Learning Institute (DLI). Learn more about NVIDIA Deep Learning Institute ( DLI ) and its University Ambassador Program, please visit
+
 https://www.nvidia.cn/deep-learning-ai/education/?activetab=certification-tabs-3
 
 
