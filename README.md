@@ -113,16 +113,32 @@ We host the online submission system at [codalab](https://worksheets.codalab.org
 The competition lasts from Feb/15/2020-Jun/30/2020, and the final results will be released during [MIDL 2020](https://2020.midl.io/).
 
 ## Leaderboard
+Team will be ranked primarily by AUC and then by FROC if there is a tie.
 
 | Rank    | Date |  Model  | AUC| FROC|
 | ------- | -----| --------| ---| ----| 
 | 1       |Mar 18, 2020 | baseline_faster-rcnn (single model) *individual participant* | 0.923 |0.800|
 | 2       |Feb 21, 2020 | [JF Healthcare baseline](https://github.com/jfhealthcare/object-CXR#baseline) (single model)  *JF Healthcare*| 0.921 |0.803|
 
+## Prize
+The team wins the first place will be awarded an **NVIDIA TITAN RTX™**
+
 ## Organizers
-[JF Healthcare](http://www.jfhealthcare.com/) is the primary organizer of this challenge
+[JF Healthcare](http://www.jfhealthcare.com/) is the primary organizer of this challenge.
 
 <img src="jf.png" width="50%" align="middle"/>
+
+[NVIDIA Inception Program](https://www.nvidia.com/en-us/deep-learning-ai/startups/) is the co-organizer of this challenge.
+
+<img src="nvidia.png" width="50%" align="middle"/>
+
+Startup companies that sign up will have an opportunity to join the NVIDIA Inception Program; providing access to financing services; NVIDIA Deep Learning Institute (DLI) training courses; GPU cloud resources and technical guidance; and a host of other services.
+
+Developers can access the link below for free training resources.
+https://www.nvidia.cn/developer/online-training
+
+Learn more about NVIDIA Deep Learning Institute ( DLI ) and its University Ambassador Program, please visit : https://www.nvidia.cn/deep-learning-ai/education/?activetab=certification-tabs-3
+
 
 ## FAQ
 For any questions, please contact yil8@uci.edu
