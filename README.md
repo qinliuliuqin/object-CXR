@@ -9,6 +9,7 @@
 - [Submission](#submission)
 - [Timeline](#timeline)
 - [Leaderboard](#leaderboard)
+- [Prize](#prize)
 - [Organizers](#organizers)
 - [FAQ](#faq)
 
