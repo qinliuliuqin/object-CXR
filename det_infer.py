@@ -103,5 +103,5 @@ gt = labels_dev.annotation.astype(bool).astype(float).values
 acc = ((pred >= .5) == gt).mean()
 fpr, tpr, _ = roc_curve(gt, pred)
 roc_auc = auc(fpr, tpr)
-print('ACC: {}'.format(acc), 'AUC: {}'.format(auc))
+print('ACC: {}'.format(acc), 'AUC: {}'.format(roc_auc))
 
