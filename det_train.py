@@ -31,9 +31,12 @@ ANNOTATION_SEP = ' '
 #     ├── train.csv
 #     └── dev.csv
 data_dir = '/mnt/projects/CXR_Object/'
-
 device = torch.device('cuda:0')
 num_classes = 2  # object (foreground); background
+num_epochs = 7
+auc_max = 0
+batch_size = 4
+
 
 def draw_annotation(im, anno_str, fill=(255, 63, 63, 40)):
     draw = ImageDraw.Draw(im, mode="RGBA")
@@ -87,7 +90,7 @@ dataset_train = ForeignObjectDataset(datafolder= data_dir + 'train/', datatype='
 dataset_dev = ForeignObjectDataset(datafolder= data_dir + 'dev/', datatype='dev', transform=data_transforms, labels_dict=img_class_dict_dev)
 
 data_loader = torch.utils.data.DataLoader(
-    dataset_train, batch_size=1, shuffle= True, num_workers=1,
+    dataset_train, batch_size=batch_size, shuffle= True, num_workers=batch_size,
     collate_fn=utils.collate_fn)
 
 data_loader_val = torch.utils.data.DataLoader(
@@ -95,7 +98,7 @@ data_loader_val = torch.utils.data.DataLoader(
     collate_fn=utils.collate_fn)
 
 def _get_detection_model(num_classes):
-    model = torchvision.models.detection.fasterrcnn_resnet50_fpn(pretrained=True)
+    model = torchvision.models.detection.fasterrcnn_resnet50_fpn(pretrained=True, pretrained_backbone=True)
     in_features = model.roi_heads.box_predictor.cls_score.in_features
     model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
     return model
@@ -110,10 +113,6 @@ optimizer = torch.optim.SGD(params, lr=0.005,
 lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer,
                                                step_size=5,
                                                gamma=0.1)
-
-num_epochs = 7
-
-auc_max = 0
 
 for epoch in range(num_epochs):
 
