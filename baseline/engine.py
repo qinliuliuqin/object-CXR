@@ -5,7 +5,7 @@ import torch
 
 import torchvision.models.detection.mask_rcnn
 
-import utils
+import baseline.utils as utils
 
 
 def train_one_epoch(model, optimizer, data_loader, device, epoch, print_freq):
