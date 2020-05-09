@@ -30,8 +30,8 @@ ANNOTATION_SEP = ' '
 #     │   └── ...
 #     ├── train.csv
 #     └── dev.csv
-data_dir = '/mnt/projects/CXR_Object/'
-device = torch.device('cuda:0')
+data_dir = '/shenlab/lab_stor6/projects/CXR_Object/'
+device = torch.device('cuda:7')
 num_classes = 2  # object (foreground); background
 num_epochs = 7
 auc_max = 0
