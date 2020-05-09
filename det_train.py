@@ -30,13 +30,15 @@ ANNOTATION_SEP = ' '
 #     │   └── ...
 #     ├── train.csv
 #     └── dev.csv
+cuda_id = 7
 data_dir = '/shenlab/lab_stor6/projects/CXR_Object/'
-device = torch.device('cuda:7')
 num_classes = 2  # object (foreground); background
 num_epochs = 7
 auc_max = 0
 batch_size = 4
 
+torch.cuda.set_device(cuda_id)
+device = torch.device('cuda:{}'.format(cuda_id))
 
 def draw_annotation(im, anno_str, fill=(255, 63, 63, 40)):
     draw = ImageDraw.Draw(im, mode="RGBA")
@@ -102,7 +104,6 @@ def _get_detection_model(num_classes):
     in_features = model.roi_heads.box_predictor.cls_score.in_features
     model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
     return model
-
 
 model_ft = _get_detection_model(num_classes)
 model_ft.to(device)
